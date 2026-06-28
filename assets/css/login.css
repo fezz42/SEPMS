@@ -1,0 +1,141 @@
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dfedfa; /* Light background color matching the design */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+/* Login Container */
+.login-container {
+  border: 1px solid var(--primary);
+  padding: 40px 30px;
+  background-color: var(--secondary);
+  box-shadow: var(--shadow);
+  position: relative;
+  border-radius: 12px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 35px;
+  width: 480px; /* Adjust width to match design */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  text-align: center;
+}
+
+/* Login Header */
+.login-header {
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 80px; /* Adjust logo size to match design */
+  height: auto;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 36px; /* Large font size for title */
+  color: #000000; /* Green color for the title */
+  font-weight: bold;
+  margin: 0;
+}
+
+h4 {
+  font-size: 15px; /* Smaller subtitle */
+  color: #8b8b8b; /* Light grey color for subtitle */
+  margin: 0;
+  font-weight: 500;
+}
+
+h5 {
+  text-align: left;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light grey border for input fields */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 14px;
+  color: #333;
+  background-color: #e7e7e7;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(
+    135deg,
+    #2196f3 0%,
+    #4caf50 100%
+  ); /* Gradient from blue to green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px; /* Larger text for button */
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(
+    135deg,
+    #1e88e5 0%,
+    #45a049 100%
+  ); /* Darker gradient on hover */
+}
+
+.login-options {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center; /* Space between the two links */
+  text-align: center;
+}
+
+.login-options a {
+  color: #5272ff; /* Green color for the links */
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.login-options a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.alert {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.alert-success {
+  color: #14532d;
+  background: #eaf7ee;
+  border: 1px solid #bfe5c9;
+}
+
+.alert-error {
+  color: #7a1f1f;
+  background: #fde8e8;
+  border: 1px solid #f5b5b5;
+}

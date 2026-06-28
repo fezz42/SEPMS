@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9fc; /* Light background color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Logout Section (with Font Awesome Icon) */
+.logout a {
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff; /* Green background like a button */
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  align-items: center; /* Align icon and text */
+}
+
+.logout a:hover {
+  background-color: #cacaca;
+}
+
+.logout .logout-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px; /* Space between the icon and text */
+}
+
+/* Login Container */
+.login-container {
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow);
+  position: relative;
+  border-radius: 12px;
+  margin: 30px auto;
+}
+
+.login-card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 35px;
+  width: 880px; /* Adjust width to match design */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Login Header */
+.login-header {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 15px; /* Large font size for title */
+  color: #000000; /* Green color for the title */
+  font-weight: bold;
+  margin: 0;
+}
+
+h4 {
+  font-size: 15px; /* Smaller subtitle */
+  color: #8b8b8b; /* Light grey color for subtitle */
+  margin: 0;
+  font-weight: 500;
+}
+
+h5 {
+  text-align: left;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light grey border for input fields */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 14px;
+  color: #333;
+  background-color: #e7e7e7;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light grey border for input fields */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 14px;
+  color: #333;
+  background-color: #e7e7e7;
+}
+
+::file-selector-button {
+  background-color: #e7e7e7;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+::file-selector-button:hover {
+  background-color: #b3b3b3;
+  cursor: pointer;
+}
+
+.login-options {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: left; /* Space between the two links */
+  text-align: center;
+}
+
+button {
+  width: auto;
+  margin-right: 8px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px; /* Larger text for button */
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-submit {
+  background: linear-gradient(
+    135deg,
+    #007add 0%,
+    #4caf50 100%
+  ); /* Gradient from blue to green */
+}
+
+.btn-cancel {
+  background: #ffd1d1;
+  color: black;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(
+    135deg,
+    #005da8 0%,
+    #408f43 100%
+  ); /* Darker gradient on hover */
+}
+
+.btn-cancel:hover {
+  background: #ff5050;
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.msg i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+/* Blue background for Encrypting your paper */
+.msg.encrypt {
+  color: #1e70d3; /* Blue text */
+  background: #eaefff;
+  border: 1px solid #1e70d3;
+}
+
+/* Green background for Encryption Successful */
+.msg.success {
+  color: #4caf50; /* Green text */
+  background: #e6fff0;
+  border: 1px solid #4caf50;
+}
+
+/* Error background */
+.msg.error {
+  color: #ff6565;
+  background: #ffebeb;
+  border: 1px solid #ff6565;
+}
+
+.key-hint {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}

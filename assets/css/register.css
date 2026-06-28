@@ -1,0 +1,179 @@
+body {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dfedfa; /* Light background color matching the design */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+/* Register Container */
+.register-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-card {
+  background-color: #ffffff;
+  padding: 20px 35px;
+  width: 480px; /* Adjust width to match design */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  text-align: center;
+}
+
+/* Register Options (Links) */
+.back-login {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.back-login a {
+  color: #5272ff; /* Green color for the links */
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.back-login a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Register Header (Logo and Text Side-by-Side) */
+.register-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px;
+}
+
+.logo {
+  width: 40px; /* Adjust logo size to match design */
+  height: auto;
+  margin-right: 10px; /* Space between logo and text */
+  margin-bottom: 10px;
+}
+
+.register-text {
+  text-align: left;
+}
+
+h2 {
+  font-size: 20px; /* Large font size for title */
+  color: #4caf50; /* Green color for the title */
+  font-weight: 600;
+  margin: 0;
+}
+
+h4 {
+  font-size: 15px; /* Smaller subtitle */
+  color: #8b8b8b; /* Light grey color for subtitle */
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+/* Adjust margin for h5 labels */
+h5 {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Flexbox container for Role and College side by side */
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Add space between the two divs */
+  gap: 30px; /* Gap between the two elements */
+  margin-bottom: 15px; /* Space between fields */
+}
+
+/* Styling for each select container */
+.select-container {
+  flex: 1; /* Makes each select take up equal width */
+}
+
+/* Select dropdown styling */
+select {
+  width: 100%; /* Makes the select dropdown take up the full width of its container */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Form Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light grey border for input fields */
+  border-radius: 8px; /* Slightly rounded corners */
+  font-size: 14px;
+  color: #333;
+  background-color: #e7e7e7;
+}
+
+/* Register Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(
+    135deg,
+    #2196f3 0%,
+    #4caf50 100%
+  ); /* Gradient from blue to green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px; /* Larger text for button */
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(
+    135deg,
+    #1e88e5 0%,
+    #45a049 100%
+  ); /* Darker gradient on hover */
+}
+
+.msg {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+  color: #ff8a8a;
+}
+.msg.error {
+  background: #fde8e8;
+  border: 1px solid #f5b5b5;
+  color: #7a1f1f;
+}
+
+.password-hint {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}

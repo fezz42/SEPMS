@@ -1,0 +1,428 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9fc; /* Light background */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px; /* Maximum width for the content */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px; /* Maximum width for the content */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Logout Section (with Font Awesome Icon) */
+.logout a {
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logout a:hover {
+  background-color: #cacaca;
+}
+
+.logout .logout-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+}
+
+/* Paper List Section */
+.paper-list-container {
+  margin-bottom: 20px;
+}
+
+.paper-card {
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 20px;
+  width: 95%;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.paper-card h3 {
+  margin-top: 5px;
+}
+
+/* Paper Card Header (Paper Name & Submission Date) */
+.paper-card2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5px 30px;
+  border-radius: 12px;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 20px;
+}
+
+.paper-card2 h1 {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.paper-card2 p {
+  font-size: 15px;
+}
+
+.paper-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  width: 600px;
+}
+
+.paper-info-grid p {
+  margin: 8px 0;
+}
+
+/* Paper Card Status Section */
+.paper-card3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Status Styling */
+/* Status Badge Styling */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-right: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.status i {
+  font-size: 18px;
+  margin-right: 0;
+}
+
+/* Pending - Yellow Theme */
+.status.pending-moderator-review,
+.status.pending-hod-review {
+  color: #b7791f;
+  border-color: #f6d365;
+  background-color: #fff8db;
+}
+
+.status.pending-moderator-review i,
+.status.pending-hod-review i {
+  color: #db8b00 !important;
+}
+
+/* Approved - Green Theme */
+.status.approved {
+  color: #2e7d32;
+  border-color: #a5d6a7;
+  background-color: #e8f5e9;
+}
+
+.status.approved i {
+  color: #2e7d32 !important;
+}
+
+/* Rejected - Red Theme */
+.status.rejected-by-moderator,
+.status.rejected-by-hod {
+  color: #c62828;
+  border-color: #ef9a9a;
+  background-color: #ffebee;
+}
+
+.status.rejected-by-moderator i,
+.status.rejected-by-hod i {
+  color: #c62828 !important;
+}
+
+/* Printed - Blue Theme */
+.status.printed {
+  color: #1565c0;
+  border-color: #90caf9;
+  background-color: #e3f2fd;
+}
+
+.status.printed i {
+  color: #1565c0 !important;
+}
+
+/* Button Styles */
+.btn-view-details {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-view-details:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content1 {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid #ffffff;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 300;
+}
+.modal-content2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  align-items: start;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.modal-content2 p {
+  margin: 0;
+}
+
+.modal-content3 {
+  margin-top: -15px;
+}
+
+.modal-content1 strong {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Review Progress Section */
+.review-progress {
+  margin-top: 0px;
+}
+
+.review-progress h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+li span {
+  font-size: 14px;
+  color: #333;
+}
+
+.stat-icon {
+  padding: 10px;
+  font-size: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  margin-right: 20px; /* Space between the icon and number */
+}
+.stat-icon i {
+  font-size: 26px;
+}
+
+.status {
+  border: 1px solid #ffe4a8;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a7770f;
+  background-color: #fffdeb; /* Green background like a button */
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.status .date {
+  font-size: 12px;
+  color: #888;
+}
+
+.review-feedback {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #fff3f3;
+  border: 1px solid #f3b4b4;
+  border-radius: 8px;
+}
+
+.review-feedback strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #c62828;
+}
+
+.review-feedback p {
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff7f7;
+  border: 1px solid #efb3b3;
+  border-radius: 10px;
+}
+
+.feedback strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #c62828;
+}
+
+.feedback p {
+  margin: 0 0 12px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.feedback small {
+  color: #777;
+}
+
+/* Review Progress Theme */
+.review-item {
+  border-radius: 12px;
+}
+
+.review-item .stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-item .stat-icon i {
+  margin-right: 0;
+}
+
+/* Submitted / Approved - Green */
+.review-green .stat-icon {
+  background-color: #e3ffee;
+}
+
+.review-green .stat-icon i,
+.review-green strong {
+  color: #106d32;
+}
+
+/* Pending - Yellow */
+.review-yellow .stat-icon {
+  background-color: #fff8db;
+}
+
+.review-yellow .stat-icon i,
+.review-yellow strong {
+  color: #a8741c;
+}
+
+/* Rejected - Red */
+.review-red .stat-icon {
+  background-color: #ffebee;
+}
+
+.review-red .stat-icon i,
+.review-red strong {
+  color: #b12a2a;
+}
+
+/* Printed - Blue */
+.review-blue .stat-icon {
+  background-color: #e3f2fd;
+}
+
+.review-blue .stat-icon i,
+.review-blue strong {
+  color: #235c9c;
+}
